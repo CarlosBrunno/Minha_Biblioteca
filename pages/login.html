@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Biblioteca</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body data-header="default">
+    <header>
+      <nav>
+        <div class="logo-header">
+          <a href="../index.html"
+            ><img src="../assets/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="itens-header">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-login">
+      <div class="itens-login">
+        <div>
+          <h1>Minha Biblioteca</h1>
+          <form action="/submit" method="post">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="E-mail"
+            />
+            <br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Senha"
+            />
+            <p>Esqueceu a senha?</p>
+          </form>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <p>Lembrar-me</p>
+        </div>
+        <button><a href="./tela-inicial.html">Iniciar Sessão</a></button>
+      </div>
+    </main>
+
+    <footer id="footer-geral"><p>&copy; 2025 Minha Biblioteca</p></footer>
+  </body>
+</html>

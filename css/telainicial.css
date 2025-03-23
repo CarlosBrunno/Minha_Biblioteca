@@ -1,0 +1,74 @@
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #e63946;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.section {
+  background: #252540;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.book {
+  background: #444;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.book-title {
+  margin-top: 5px;
+  color: #e63946;
+  text-align: center;
+}
+
+.suggestions {
+  color: #e63946;
+}
+
+.link {
+  text-align: right;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 20px;
+}

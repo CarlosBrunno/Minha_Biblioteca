@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-:root {
-    --primary-color: #3c3244;
-    --secondary-color: #574964;
-    --accent-color: #ff4062;
-    --text-color: #eeeeee;
-    --background-color: #1c1125;
-    --font-family: 'Roboto Flex', sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;

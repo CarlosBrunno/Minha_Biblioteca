@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Cadastrais</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dados-cadastrais.css">
+</head>
+<body data-header="default">
+    <header>
+        <nav>
+            <div class="logo-header">
+                <a href="../index.html"><img src="../assets/logo.png" alt="logo"></a>
+            </div>
+            <ul class="itens-header-dados">
+                <li><a id="emprestimo" href="emprestimos.html">Meus Empréstimos</a></li>
+                <li><a id="menu" href="tela-inicial.html">Menu Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Titulo">
+        <h1>Dados Cadastrais</h1>
+    </div>
+    <main class="content-dados">
+        
+        <div class="itens-dados">
+            <div class="dados-container">
+                <p><strong>Primeiro Nome:</strong> <span id="primeiro-nome">Primeiro Nome</span></p>
+                <p><strong>Sobrenome:</strong> <span id="sobrenome">Sobrenome</span></p>
+                <p><strong>E-mail:</strong> <span id="email">email@email.com</span></p>
+                <p><strong>Região:</strong> <span id="regiao">Brasil (Padrão)</span></p>
+            </div>
+            <button id="editar-dados">Editar dados</button>
+            <button id="salvar-dados" style="display: none;">Salvar dados</button>
+        </div>
+        <div class="logout-div">
+            <button id="logout">Logout</button>
+        </div>
+    </main>
+
+    <footer id="footer-geral"><p>&copy; 2025 Minha Biblioteca</p></footer>
+
+    <script src="../js/dados-cadastrais.js"></script>
+</body>
+</html>

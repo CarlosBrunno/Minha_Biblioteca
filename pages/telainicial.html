@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Biblioteca</title>
+  <link rel="stylesheet" href="LibraryPage.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">Minha Biblioteca</h1>
+      <div>
+        <button class="btn">Meus Empréstimos</button>
+        <button class="btn btn-highlight">Dados Cadastrais</button>
+      </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Procurando algum título em específico?" />
+      <button class="btn btn-highlight">Buscar</button>
+    </div>
+
+    <!-- Títulos mais procurados -->
+    <section class="section">
+      <h2 class="title">Títulos mais procurados</h2>
+      <div class="book-grid">
+        <div class="book">Capa do livro</div>
+        <div class="book">Capa do livro</div>
+        <div class="book">Capa do livro</div>
+        <div class="book">Capa do livro</div>
+        <div class="book">Capa do livro</div>
+      </div>
+      <p class="link">Exibir todos</p>
+    </section>
+
+    <!-- Sugestões para você -->
+    <section>
+      <h2 class="suggestions">Sugestões para você</h2>
+      <div class="book-grid">
+        <div class="book-container">
+          <div class="book">Capa do livro</div>
+          <p class="book-title">Título do Livro</p>
+        </div>
+        <div class="book-container">
+          <div class="book">Capa do livro</div>
+          <p class="book-title">Título do Livro</p>
+        </div>
+        <div class="book-container">
+          <div class="book">Capa do livro</div>
+          <p class="book-title">Título do Livro</p>
+        </div>
+        <div class="book-container">
+          <div class="book">Capa do livro</div>
+          <p class="book-title">Título do Livro</p>
+        </div>
+        <div class="book-container">
+          <div class="book">Capa do livro</div>
+          <p class="book-title">Título do Livro</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logout Button -->
+    <footer class="footer">
+      <button class="btn btn-logout">Logout</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

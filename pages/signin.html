@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minha Biblioteca</title>
+    <title>Cadastro - Minha Biblioteca</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body data-header="default">
+  <body>
     <header>
       <nav>
         <div class="logo-header">
-          <a href="../index.html"
-            ><img src="../assets/logo.png" alt="logo"
-          /></a>
+          <a href="../tela-principal.html">
+            <img src="../assets/logo.png" alt="logo" />
+          </a>
         </div>
         <ul class="itens-header">
           <li><a href="login.html">Login</a></li>
@@ -21,29 +21,64 @@
       </nav>
     </header>
 
-    <main>
-      <form action="/submit" method="post">
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Digite seu e-mail"
-        />
-        <br />
+    <main class="container-signin">
+      <p class="titulo-signin">Cadastre-se</p>
+      <p>A sua biblioteca disponível em qualquer lugar, a qualquer hora.</p>
 
-        <label for="password">Senha:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          required
-          placeholder="Digite sua sdsdsenha"
-        />
-      </form>
+      <div class="form-box">
+        <p>Informações da conta:</p>
+        <form class="form-signin" action="/submit" method="post">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            class="input-signin"
+            required
+            placeholder="Primeiro Nome"
+          />
+
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            class="input-signin"
+            required
+            placeholder="Sobrenome"
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-signin"
+            required
+            placeholder="E-mail"
+          />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input-signin"
+            required
+            placeholder="Senha"
+          />
+          <div>
+            <select id="country" name="country" class="input-signin" required>
+              <option value="">Carregando...</option>
+            </select>
+          </div>
+          <button type="submit" class="button-signin">
+            Iniciar minha Biblioteca
+          </button>
+        </form>
+      </div>
     </main>
 
-    <footer id="footer-geral"><p>&copy; 2025 Minha Biblioteca</p></footer>
+    <footer id="footer-geral">
+      <p>&copy; 2025 Minha Biblioteca</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

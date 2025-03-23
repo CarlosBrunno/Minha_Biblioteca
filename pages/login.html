@@ -10,7 +10,7 @@
     <header>
       <nav>
         <div class="logo-header">
-          <a href="../index.html"
+          <a href="../tela-principal.html"
             ><img src="../assets/logo.png" alt="logo"
           /></a>
         </div>
@@ -22,33 +22,44 @@
     </header>
 
     <main class="content-login">
+      <p>Minha Biblioteca</p>
       <div class="itens-login">
-        <div>
-          <h1>Minha Biblioteca</h1>
-          <form action="/submit" method="post">
+        <div class="form-login">
+          <p>Iniciar Sessão</p>
+          <form class="container-form" action="/submit" method="post">
             <input
+              class="input-login"
               type="email"
               id="email"
               name="email"
               required
               placeholder="E-mail"
             />
-            <br />
             <input
+              class="input-login"
               type="password"
               id="password"
               name="password"
               required
               placeholder="Senha"
             />
-            <p>Esqueceu a senha?</p>
+            <div class="forgot-password">
+              <div class="checkbox-login">
+                <input type="checkbox" />
+                <p class="details-text">Lembrar-me</p>
+              </div>
+              <p class="details-text">Esqueceu a senha?</p>
+            </div>
           </form>
         </div>
-        <div>
-          <input type="checkbox" />
-          <p>Lembrar-me</p>
-        </div>
-        <button><a href="./tela-inicial.html">Iniciar Sessão</a></button>
+        <button class="botton-login">
+          <a href="./tela-inicial.html">Iniciar Sessão</a>
+        </button>
+        <p class="signin-text">
+          Não possui uma conta?<a href="./signin.html" class="signin-details"
+            >Cadastre-se!</a
+          >
+        </p>
       </div>
     </main>
 

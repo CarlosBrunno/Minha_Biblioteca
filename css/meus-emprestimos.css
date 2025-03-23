@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root {
-  --primary-color: #3c3244;
-  --secondary-color: #574964;
-  --accent-color: #ff4062;
-  --text-color: #eeeeee;
-  --background-color: #1c1125;
-  --font-family: 'Roboto Flex', sans-serif;
+    --primary-color: #3c3244;
+    --secondary-color: #574964;
+    --accent-color: #ff4062;
+    --text-color: #eeeeee;
+    --background-color: #1c1125;
+    --font-family: 'Roboto Flex', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: #3c3244;
+    background-color: #1c1125;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 /* Estilos do header */
-.menu-principal{
+.menu-principal {
     background-color: red;
     display: flex;
     justify-content: space-between;
@@ -25,25 +26,25 @@ body{
     height: 100px;
 }
 
-.logo-header img{
+.logo-header img {
     padding-top: 10px;
     width: 80px;
 }
 
-.links-header{
+.links-header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
     padding-right: 20px;
-   
+
 }
 
-.links-header li{
+.links-header li {
     list-style: none;
 }
 
-.link-menu-principal a{
+.link-menu-principal a {
     text-decoration: none;
     color: #ff4062;
     font-size: 16px;
@@ -54,11 +55,11 @@ body{
     transition: 0.10s ease-in-out;
 }
 
-.link-menu-principal a:hover{
+.link-menu-principal a:hover {
     opacity: 0.6;
 }
 
-.link-dados-cadastrais a{
+.link-dados-cadastrais a {
     text-decoration: none;
     color: #eeeeee;
     font-size: 16px;
@@ -68,32 +69,33 @@ body{
     padding: 8px;
     transition: 0.10s ease-in-out;
 }
-.link-dados-cadastrais a:hover{
+
+.link-dados-cadastrais a:hover {
     opacity: 0.6;
 }
 
 /*Estilo Geral do Main*/
 
-.itens-main{
- display: flex;
- align-items: center;
- flex-direction: column;
- margin-top: 30px;
+.itens-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
-.title-section h1{
+.title-section h1 {
     color: #eeeeee;
     font-size: 3em;
     margin: 0;
 }
 
-.search-form{
+.search-form {
     display: flex;
     margin: 20px;
 }
 
-.search-form input{
-    width: 500px;
+.search-form input {
+    width: 800px;
     height: 50px;
     border: none;
     border-radius: 5px 0 0px 5px;
@@ -101,7 +103,7 @@ body{
     padding: 0 10px;
 }
 
-.search-form button{
+.search-form button {
     width: 80px;
     height: 50px;
     border: none;
@@ -109,24 +111,25 @@ body{
     cursor: pointer;
     background-color: #ff4062;
     color: #eeeeee;
-    border-radius: 0 5px 5px 0px;  
+    border-radius: 0 5px 5px 0px;
 }
 
-.search-form button:hover{
+.search-form button:hover {
     opacity: 0.8;
 }
 
 /*Estilo do books*/
 
-.books{
+.books {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 0;
     list-style-type: none;
+    margin-bottom: 50px;
 }
 
-.books li{
+.books li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,18 +139,75 @@ body{
     border-radius: 8px;
 }
 
-.books li img{
+.books li img {
     width: auto;
     height: 250px;
 }
 
-.books-information{
+.books-information {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.books-information p{
+.books-information p {
     margin: 10px;
+}
+
+.books-information button {
+    margin: 10px;
+    padding: 7px 20px;
+    border: 1px solid #ff4062;
+    border-radius: 5px;
+    color: #ff4062;
+    cursor: pointer;
+}
+
+.section-exibir-todos {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.sugestoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.sugestoes a {
+    font-size: 30px;
+    color: #ff4062;
+    font-weight: bold;
+    margin-left: 100px;
+    display: inline-block;
+    border-bottom: 2px solid #ff4062;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sugestoes button {
+    background-color: #544363;
+    color: #ccc;
+    border: none;
+    padding: 15px 25px;
+    margin-right: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-geral {
+    width: 100%;
+    height: 80px;
+    background-color: #574964;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }

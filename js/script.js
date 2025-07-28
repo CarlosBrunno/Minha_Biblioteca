@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function loadCountries() {
     try {
-      const response = await fetch("https://restcountries.com/v3.1/all");
+      const response = await fetch("https://restcountries.com/v3.1/all?fields=name,cca2");
       const countries = await response.json();
 
       countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
@@ -24,4 +24,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   loadCountries();
+});
+
+// Captura o envio do formulário e salva os dados no localStorage
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector('.form-signin');
+  
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio real do formulário
+
+      const userData = {
+        firstname: document.getElementById('firstname').value,
+        lastname: document.getElementById('lastname').value,
+        email: document.getElementById('email').value,
+        country: document.getElementById('country').value
+      };
+
+      localStorage.setItem('userData', JSON.stringify(userData));
+
+      alert('Dados salvos localmente!');
+
+      // Redireciona usando caminho relativo
+      window.location.href = '../tela-principal.html';
+    });
+  }
 });

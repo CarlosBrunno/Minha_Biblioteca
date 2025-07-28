@@ -1,0 +1,26 @@
+{
+  "name": "minha_biblioteca",
+  "version": "1.0.0",
+  "description": "Repósitorio para o sistema web para disciplina de projeto integrado.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server ./pages -p 8080",
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosBrunno/Minha_Biblioteca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosBrunno/Minha_Biblioteca/issues"
+  },
+  "homepage": "https://github.com/CarlosBrunno/Minha_Biblioteca#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "http-server": "^14.1.1",
+    "playwright": "^1.54.1"
+  }
+}

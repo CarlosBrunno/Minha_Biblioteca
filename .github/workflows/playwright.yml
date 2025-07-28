@@ -1,0 +1,35 @@
+name: Testes Automatizados com Playwright
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🧾 Clonar o repositório
+      uses: actions/checkout@v3
+
+    - name: 🔧 Instalar Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: 📦 Instalar dependências
+      run: npm install
+
+    - name: ⚙️ Instalar browsers do Playwright
+      run: npx playwright install --with-deps
+
+    - name: 🌐 Iniciar servidor local
+      run: npx http-server ./pages -p 8080 &
+      # Espera o servidor subir
+    - name: 🕐 Aguardar servidor
+      run: sleep 3
+
+    - name: ✅ Executar testes
+      run: npx playwright test

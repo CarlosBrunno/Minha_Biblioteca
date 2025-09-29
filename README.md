@@ -1,24 +1,33 @@
-# Minha_Biblioteca
-Repósitorio para o sistema web para disciplina de projeto integrado.
-# 📚 Minha Biblioteca - Integração Contínua
+# Minha Biblioteca - Projeto Integrado
 
-Este repositório faz parte do Entregável Parcial 1 (EP1) da disciplina de Extensão em Computação, e tem como objetivo configurar um processo de **Integração Contínua (CI)** utilizando **GitHub Actions**, com verificação automatizada do código por meio de **testes com Playwright**.
----
+Repositório para o sistema web da disciplina de projeto integrado. Este projeto inclui uma interface de usuário e uma API simulada para gerenciamento de dados, com testes automatizados para ambas as partes.
 
-## 📦 Estrutura do Projeto
+## 🚀 Como Executar o Projeto e os Testes
 
-O projeto foi desenvolvido com **HTML**, **CSS** e **JavaScript puro**, simulando uma aplicação de biblioteca digital com cadastro de usuários.
+Para rodar este projeto, você precisará ter o [Node.js](https://nodejs.org/) instalado.
 
----
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/CarlosBrunno/Minha_Biblioteca.git](https://github.com/CarlosBrunno/Minha_Biblioteca.git)
+    cd Minha_Biblioteca
+    ```
 
-## ⚙️ Integração Contínua com GitHub Actions
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+    *(Este comando lerá o `package.json` e instalará todas as ferramentas necessárias para o projeto, como `jest` e `json-server`, de uma só vez.)*
 
-Utilizamos o GitHub Actions para automatizar o seguinte fluxo:
+### Testes da API (Entregável 3)
 
-1. Clona o repositório
-2. Instala o Node.js e dependências (`playwright`, `http-server`)
-3. Roda um servidor local na pasta `/pages`
-4. Executa testes automatizados com Playwright
-5. Arquivo de configuração para o fluxo de teste automatizado
-### 🔁 Pipeline `.github/workflows/playwright.yml`
+Para rodar os testes da API, você precisará de **dois terminais**.
 
+* **No Terminal 1,** inicie a API simulada:
+    ```bash
+    npm run start-api
+    ```
+
+* **No Terminal 2,** execute a suíte de testes da API com o Jest:
+    ```bash
+    npm run test:api
+    ```
